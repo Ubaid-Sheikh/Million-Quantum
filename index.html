@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Million Quantums - Quantum Technology Accelerator</title>
+  <meta name="description"
+    content="A quantum technology start-up accelerator helping founders turn breakthrough science into real-world products.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/quantum.css" rel="stylesheet">
+  <link href="assets/css/hamburger-overlay.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Quantum Background -->
+  <div class="quantum-bg">
+    <canvas id="quantum-canvas"></canvas>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="quantum-nav">
+    <div class="container-fluid">
+      <div class="nav-content">
+        <a href="#" class="nav-logo">
+          <img src="assets/img/logo.jpeg" alt="Million Quantums">
+          <span class="logo-text">Million Quantums</span>
+        </a>
+
+        <!-- INSANE Animated Hamburger -->
+        <button class="hamburger-menu" id="hamburgerMenu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+          <span class="menu-text">Menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PREMIUM Full-Screen Overlay -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="overlay-background">
+      <div class="overlay-shape overlay-shape-1"></div>
+      <div class="overlay-shape overlay-shape-2"></div>
+      <div class="overlay-shape overlay-shape-3"></div>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay-top">
+        <div class="overlay-logo">
+          <img src="assets/img/logo.jpeg" alt="Million Quantums">
+          <span>Million Quantums</span>
+        </div>
+        <button class="overlay-close" id="overlayClose">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="overlay-navigation">
+        <div class="nav-item">
+          <a href="#hero" class="nav-item-link">
+            <span class="nav-number">01</span>
+            <span class="nav-title">Home</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#what-we-do" class="nav-item-link">
+            <span class="nav-number">02</span>
+            <span class="nav-title">What We Do</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#focus" class="nav-item-link">
+            <span class="nav-number">03</span>
+            <span class="nav-title">Focus Areas</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#program" class="nav-item-link">
+            <span class="nav-number">04</span>
+            <span class="nav-title">Program</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#process" class="nav-item-link">
+            <span class="nav-number">05</span>
+            <span class="nav-title">How It Works</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="overlay-bottom">
+        <div class="overlay-actions">
+          <a href="#apply" class="overlay-btn-apply">Apply Now</a>
+          <a href="#partner" class="overlay-btn-partner">Partner With Us</a>
+        </div>
+        <div class="overlay-info">
+          <p class="overlay-email">hello@millionquantums.com</p>
+          <p class="overlay-tagline">Building the quantum future</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-grid"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-badge" data-aos="fade-down">
+          <span class="badge-dot"></span>
+          <span>Quantum Technology Accelerator</span>
+        </div>
+
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          <span class="title-line">
+            <span class="word">Million</span>
+          </span>
+          <span class="title-line">
+            <span class="word gradient-text">Quantums</span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Accelerating breakthrough quantum science into<br>
+          <span class="typed-text"></span><span class="cursor-blink">|</span>
+        </p>
+
+        <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="300">
+          <a href="#apply" class="btn-primary">
+            <span>Apply Now</span>
+            <div class="btn-glow"></div>
+          </a>
+          <a href="#partner" class="btn-secondary">
+            <span>Partner With Us</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-note" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-bell"></i>
+          <span>Join the waitlist for the next cohort</span>
+        </div>
+
+      </div>
+
+      <!-- Floating Stats -->
+      <div class="floating-stats">
+        <div class="stat-card" data-aos="fade-left" data-aos-delay="500">
+          <div class="stat-value">$2.5B+</div>
+          <div class="stat-label">Portfolio Value</div>
+        </div>
+        <div class="stat-card" data-aos="fade-left" data-aos-delay="600">
+          <div class="stat-value">150+</div>
+          <div class="stat-label">Quantum Startups</div>
+        </div>
+        <div class="stat-card" data-aos="fade-left" data-aos-delay="700">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <!-- <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div> -->
+  </section>
+
+  <!-- What We Do Section -->
+  <section id="what-we-do" class="what-section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Our Mission</span>
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-lead">We accelerate quantum ventures from lab to market</p>
+      </div>
+
+      <div class="mission-grid">
+        <div class="mission-main" data-aos="fade-right">
+          <div class="glass-card">
+            <p class="mission-text">
+              Million Quantums supports founders building quantum technologies across <span
+                class="highlight">computing</span>, <span class="highlight">hardware</span>, <span
+                class="highlight">sensing</span>, <span class="highlight">communications</span>, and <span
+                class="highlight">enabling infrastructure</span>.
+            </p>
+            <p class="mission-text">
+              We combine structured acceleration, expert mentorship, validation support, and access to pilots and
+              capital networks.
+            </p>
+          </div>
+        </div>
+
+        <div class="features-stack">
+
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Structured Program</h4>
+              <p>Clear milestones and weekly sprints</p>
+            </div>
+            <div class="feature-number">01</div>
+          </div>
+
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Expert Mentorship</h4>
+              <p>Quantum research and industry leaders</p>
+            </div>
+            <div class="feature-number">02</div>
+          </div>
+
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Validation Support</h4>
+              <p>Technical validation and product strategy</p>
+            </div>
+            <div class="feature-number">03</div>
+          </div>
+
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="400">
+            <div class="feature-icon">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Pilot Pathways</h4>
+              <p>Partner introductions and market access</p>
+            </div>
+            <div class="feature-number">04</div>
+          </div>
+
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="500">
+            <div class="feature-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Fundraising Ready</h4>
+              <p>Investor access and capital preparation</p>
+            </div>
+            <div class="feature-number">05</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Focus Areas Section -->
+  <section id="focus" class="focus-section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Technologies</span>
+        <h2 class="section-title">Focus Areas</h2>
+        <p class="section-lead">Quantum technologies we accelerate</p>
+      </div>
+
+      <div class="focus-grid">
+
+        <div class="focus-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="focus-inner">
+            <div class="focus-icon-wrapper">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3>Quantum Computing</h3>
+            <p>Algorithms, software tooling, benchmarking, error mitigation</p>
+            <div class="focus-hover-effect"></div>
+          </div>
+        </div>
+
+        <div class="focus-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="focus-inner">
+            <div class="focus-icon-wrapper">
+              <i class="bi bi-motherboard"></i>
+            </div>
+            <h3>Quantum Hardware</h3>
+            <p>Photonics, control systems, devices, cryo-electronics</p>
+            <div class="focus-hover-effect"></div>
+          </div>
+        </div>
+
+        <div class="focus-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="focus-inner">
+            <div class="focus-icon-wrapper">
+              <i class="bi bi-radar"></i>
+            </div>
+            <h3>Quantum Sensing</h3>
+            <p>Navigation, industrial sensing, medical imaging</p>
+            <div class="focus-hover-effect"></div>
+          </div>
+        </div>
+
+        <div class="focus-item" data-aos="zoom-in" data-aos-delay="400">
+          <div class="focus-inner">
+            <div class="focus-icon-wrapper">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3>Quantum Communications</h3>
+            <p>QKD, secure networking, quantum internet</p>
+            <div class="focus-hover-effect"></div>
+          </div>
+        </div>
+
+        <div class="focus-item" data-aos="zoom-in" data-aos-delay="500">
+          <div class="focus-inner">
+            <div class="focus-icon-wrapper">
+              <i class="bi bi-gear-wide-connected"></i>
+            </div>
+            <h3>Enabling Infrastructure</h3>
+            <p>Materials, simulation, manufacturing, testing</p>
+            <div class="focus-hover-effect"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Program Section -->
+  <section id="program" class="program-section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Acceleration</span>
+        <h2 class="section-title">Program Snapshot</h2>
+        <p class="section-lead">Speed without sacrificing rigor</p>
+      </div>
+
+      <div class="program-container">
+
+        <div class="program-visual" data-aos="fade-right">
+          <div class="program-circle">
+            <div class="circle-content">
+              <div class="circle-text">8-12</div>
+              <div class="circle-label">Weeks</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-details">
+
+          <div class="detail-card" data-aos="fade-left" data-aos-delay="100">
+            <div class="detail-icon"><i class="bi bi-calendar-check"></i></div>
+            <div class="detail-content">
+              <h4>Duration</h4>
+              <p>8-12 weeks, cycle-based cohorts</p>
+            </div>
+          </div>
+
+          <div class="detail-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="detail-icon"><i class="bi bi-globe"></i></div>
+            <div class="detail-content">
+              <h4>Format</h4>
+              <p>Hybrid: remote + optional in-person</p>
+            </div>
+          </div>
+
+          <div class="detail-card" data-aos="fade-left" data-aos-delay="300">
+            <div class="detail-icon"><i class="bi bi-bullseye"></i></div>
+            <div class="detail-content">
+              <h4>Tracks</h4>
+              <p>Early-stage (0-1) and Growth (1-10)</p>
+            </div>
+          </div>
+
+          <div class="detail-card" data-aos="fade-left" data-aos-delay="400">
+            <div class="detail-icon"><i class="bi bi-rocket-takeoff"></i></div>
+            <div class="detail-content">
+              <h4>Outcome</h4>
+              <p>Demo Day + investor readiness</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="program-cta" data-aos="fade-up" data-aos-delay="500">
+        <a href="#process" class="btn-outline">
+          <span>Explore the Program</span>
+          <i class="bi bi-arrow-down"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process-section">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Journey</span>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-lead">From application to Demo Day</p>
+      </div>
+
+      <div class="process-timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <h3>Apply Online</h3>
+            <p>Submit your deck and application form</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <h3>Technical Review</h3>
+            <p>Our team evaluates your technology</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <h3>Founder Interviews</h3>
+            <p>Deep dive with selection committee</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-number">04</div>
+          <div class="timeline-content">
+            <h3>Program Kickoff</h3>
+            <p>Weekly sprints and milestones</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-number">05</div>
+          <div class="timeline-content">
+            <h3>Demo Day</h3>
+            <p>Showcase to investors and partners</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Outcomes -->
+      <div class="outcomes-box" data-aos="fade-up" data-aos-delay="600">
+        <h3>What Founders Leave With</h3>
+        <div class="outcomes-grid">
+          <div class="outcome-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Clear product narrative</span>
+          </div>
+          <div class="outcome-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Technical roadmap</span>
+          </div>
+          <div class="outcome-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Validation plan</span>
+          </div>
+          <div class="outcome-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>GTM strategy</span>
+          </div>
+          <div class="outcome-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Fundraising materials</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="apply" class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content" data-aos="zoom-in">
+
+        <h2 class="cta-title">
+          Build the quantum<br>
+          future — <span class="gradient-text">faster</span>
+        </h2>
+
+        <p class="cta-text">
+          Apply to the next cohort, or partner with us to support quantum commercialization
+        </p>
+
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">
+            <span>Apply Now</span>
+            <div class="btn-glow"></div>
+          </a>
+          <a href="#" class="btn-secondary">
+            <span>Partner With Us</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="quantum-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="assets/img/logo.jpeg" alt="Million Quantums">
+          <p>Accelerating quantum ventures from lab to market</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#what-we-do">What We Do</a>
+          <a href="#focus">Focus Areas</a>
+          <a href="#program">Program</a>
+          <a href="#process">Process</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Apply</h4>
+          <a href="#apply">Application</a>
+          <a href="#partner">Partner</a>
+          <a href="#">Waitlist</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:hello@millionquantums.com">hello@millionquantums.com</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Million Quantums. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/quantum.js"></script>
+
+</body>
+
+</html>
