@@ -18,7 +18,7 @@
     --text-muted: #94A3B8;
 
     --gradient-primary: linear-gradient(135deg, var(--quantum-blue), var(--quantum-purple));
-    --gradient-accent: linear-gradient(135deg, var(--quantum-cyan), var(--quantum-green));
+    --gradient-accent: linear-gradient(135deg, #60A5FA, #2563EB);
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -279,12 +279,12 @@ body {
 }
 
 .typed-text {
-    color: var(--quantum-cyan);
+    color: #2563EB;
     font-weight: 600;
 }
 
 .cursor-blink {
-    color: var(--quantum-cyan);
+    color: #2563EB;
     animation: blink 1s step-end infinite;
 }
 
@@ -355,7 +355,7 @@ body {
 }
 
 .btn-secondary:hover {
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     color: var(--text-primary);
 }
 
@@ -366,8 +366,8 @@ body {
 }
 
 .btn-outline:hover {
-    border-color: var(--quantum-cyan);
-    background: rgba(0, 212, 255, 0.05);
+    border-color: #2563EB;
+    background: rgba(37, 99, 235, 0.05);
     color: var(--text-primary);
 }
 
@@ -406,7 +406,7 @@ body {
 
 .stat-card:hover {
     transform: translateX(-8px);
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
 }
 
@@ -470,7 +470,7 @@ body {
 .scroll-line {
     width: 1px;
     height: 35px;
-    background: linear-gradient(to bottom, var(--quantum-cyan), transparent);
+    background: linear-gradient(to bottom, #2563EB, transparent);
 }
 
 /* Sections */
@@ -493,7 +493,7 @@ section {
     border-radius: 50px;
     font-size: 11px;
     font-weight: 600;
-    color: var(--quantum-cyan);
+    color: #2563EB;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 18px;
@@ -538,7 +538,7 @@ section {
 
 .glass-card:hover {
     transform: translateY(-4px);
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
 }
 
@@ -550,7 +550,7 @@ section {
 }
 
 .highlight {
-    color: var(--quantum-cyan);
+    color: #2563EB;
     font-weight: 600;
 }
 
@@ -591,7 +591,7 @@ section {
 
 .feature-card:hover {
     transform: translateX(8px);
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
 }
 
@@ -675,7 +675,7 @@ section {
 
 .focus-inner:hover {
     transform: translateY(-6px);
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
 }
 
@@ -802,14 +802,14 @@ section {
 
 .detail-card:hover {
     transform: scale(1.03);
-    border-color: var(--quantum-cyan);
+    border-color: #2563EB;
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
 }
 
 .detail-icon {
     font-size: 24px;
     flex-shrink: 0;
-    color: var(--quantum-cyan);
+    color: #2563EB;
 }
 
 .detail-content h4 {
@@ -919,8 +919,8 @@ section {
 
 .timeline-content:hover {
     transform: scale(1.02);
-    border-color: var(--quantum-cyan);
-    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.15);
+    border-color: #2563EB;
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
 }
 
 .timeline-content h3 {
@@ -998,13 +998,13 @@ section {
 }
 
 .outcome-item:hover {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(37, 99, 235, 0.05);
     transform: translateX(4px);
 }
 
 .outcome-item i {
     font-size: 18px;
-    color: var(--quantum-green);
+    color: #2563EB;
     flex-shrink: 0;
 }
 
@@ -1101,7 +1101,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: var(--quantum-cyan);
+    color: #2563EB;
     padding-left: 4px;
 }
 
@@ -1118,7 +1118,7 @@ section {
 }
 
 .footer-contact a:hover {
-    color: var(--quantum-cyan);
+    color: #2563EB;
 }
 
 .footer-bottom {
